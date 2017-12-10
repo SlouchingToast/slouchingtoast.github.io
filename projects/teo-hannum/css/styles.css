@@ -1,0 +1,340 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        border: 0 !important;
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+        opacity: .6;
+        background-color: #E9F7EF;
+    }
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.container>.navbar-header {
+    background-color: ;
+}
+
+a.navbar-brand.page-scroll {
+    color: #2E86C1;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top li a {
+    color: #2E86C1;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #E9F7EF;
+}
+
+.navbar-nav li {
+    font-size: 1.5em;
+    padding-left: 1.5em;
+}
+
+.navbar-brand {
+    position: fixed;
+    text-overflow: clip;
+}
+
+.parallax {
+    background-image: url("../images/water.jpeg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-section {
+    text-align: center;
+    background: #fff;
+    display: block;
+    overflow: auto;
+    height: 100%;
+}
+
+h1.tagline {
+    text-align: center;
+    color: black;
+    font-weight: 300;
+    margin-top: 9.7em;
+    opacity: .7;
+    position: absolute;
+    z-index: 1000;
+}
+
+section {
+    min-height: 100%;
+}
+
+.who-section {
+    background: #C5D8E5;
+    height: 100%;
+    padding-top: 9em;
+    text-align: right;
+}
+
+.quote {
+    text-align: left;
+}
+
+div#whoBox {
+    position: relative;
+}
+
+div#whoBox2 {
+    text-align: left;
+}
+
+div.row #whoBox {
+    float: left;
+    background: #FFFFFF;
+    padding: .5em;
+    min-height: 20em;
+}
+
+div.row #whoPic {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.what-section {
+    background: #EFE7DB;
+    padding-top: 9em;
+    text-align: left;
+}
+
+div#whatBox {
+    position: relative;
+    float: right;
+}
+
+div#whatBox2 {
+    text-align: right;
+}
+
+#videoBox {
+    text-align: center;
+    padding: 1em;
+}
+
+div.row #whatBox {
+    background: #FFFFFF;
+    min-height: 20em;
+    padding: .5em;
+}
+
+div.row #whatPic {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.details-section {
+    min-height: 1500px;
+    padding-top: .9em;
+    background: #C1C4BF;
+    overflow: contain;
+}
+
+div#detailsBox {
+    position: relative;
+    text-align: center;
+}
+
+div#detailsBox2 {
+    padding: .5em;
+    padding-bottom: .5em;
+    text-align: right;
+    display: inline-block;
+}
+
+div#detailsBox3 {
+    padding: .5em;
+    background: white;
+}
+
+div.row #detailsBox {
+    background: #FFFFFF;
+    padding: .5em;
+    padding-top: 1em;
+    min-height: 20em;
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+    .wordBlock {
+        float: none;
+        width: 100%;
+        display: inline-block;
+        text-align: justify;
+    }
+    div.row #whoPic {
+        float: none;
+        text-align: center;
+        padding-bottom: .5em;
+    }
+    div.row #whatPic {
+        float: none;
+        text-align: center;
+        padding-bottom: .5em;
+    }
+}
+
+
+/* Price Table */
+
+.table {
+    margin: auto;
+    max-width: 20em;
+    min-width: 10em;
+    text-align: center;
+}
+
+thead, th {
+    display: none;
+}
+
+
+/* Global */
+
+h2 {
+    font-family: 'Bellefair', serif;
+    padding-top: 1.5em;
+    padding-left: .5em;
+    text-align: left;
+}
+
+blockquote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    border-left: none;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 2em;
+    position: absolute;
+    left: -.25em;
+    top: -.4em;
+    color: #7a7a7a;
+}
+
+cite {
+    font-family: 'Bellefair', serif;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+.map {
+    width: 55%;
+    margin-right: 2%;
+    float: left;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+
+/*Contact Form*/
+
+.form-custom {
+    width: 42%;
+    float: right;
+}
+
+@media (max-width: 800px) {
+    .form-custom {
+        float: none;
+        width: 100%;
+    }
+    p.form-group {
+        text-align: center;
+    }
+    .map {
+        float: none;
+        width: 100%;
+        display: block;
+        margin-right: none;
+    }
+    p.map {
+        margin-top: 1em;
+        text-align: center;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+}
+
+form select, .form_custom select {
+    padding: 0px !important;
+    font-size: 13px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 16px !important;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: transparent !important;
+    border: none !important;
+    background-image: none;
+    border-bottom: 1px solid #423A6B !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #62C5BF;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+
+.button-block {
+    display: block;
+    padding: 7px 15px;
+    margin: 10px auto;
+}
+
+
+/*End Contact Form*/
+
+.clearfix {
+    clear: both;
+}
