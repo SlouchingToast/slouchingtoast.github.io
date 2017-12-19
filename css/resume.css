@@ -123,12 +123,13 @@ a {
 
 .img-project {
         opacity: 0.5;
-        filter: alpha(opacity=50);
     }
 
 .img-project:hover {
+        transition: ease-in-out;
+        transition-property: opacity;
+        transition-duration: 2s;
         opacity: 1.0;
-        filter: alpha(opacity=100);
     }
 
 section {
