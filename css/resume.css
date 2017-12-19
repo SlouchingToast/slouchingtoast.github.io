@@ -35,11 +35,14 @@ h2 {
 }
 
 .list-social-icons a {
-  color: #495057; }
+  color: #495057;
+}
   .list-social-icons a:hover {
-    color: #B4DAB9; }
+    color: #B4DAB9;
+}
   .list-social-icons a .fa-lg {
-    font-size: 1.75rem; }
+    font-size: 1.75rem;
+}
 
 .list-icons {
   font-size: 3rem; }
