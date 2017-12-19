@@ -122,13 +122,16 @@ a {
 }
 
 .img-project {
+        transition: ease-out;
+        transition-property: opacity;
+        transition-duration: 1s;
         opacity: 0.5;
     }
 
 .img-project:hover {
-        transition: ease-in-out;
+        transition: ease-in;
         transition-property: opacity;
-        transition-duration: 2s;
+        transition-duration: 1s;
         opacity: 1.0;
     }
 
