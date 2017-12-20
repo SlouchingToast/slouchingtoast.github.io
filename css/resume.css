@@ -138,3 +138,5 @@ a {
 section {
     background-color: #ECE8DA;
 }
+/* Note to self:  */
+/* run CSS thru Auto Prefixer, then minifier, then link HTML to .min.css */
