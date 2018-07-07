@@ -1,0 +1,367 @@
+body, html { /* needed for hero to work */
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 16px;
+}
+
+header {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, h7, form, ul, li, #top, .navbar-item{
+    font-family: 'Raleway', serif;
+    font-weight: 500;
+    letter-spacing: .12em;
+}
+
+body {
+    font-family: 'Bitter', serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.pageTitle {
+    float: right !important;
+    font-weight: 600;
+}
+
+.hero-image {
+    /* The image used */
+    background-image: url("../images/hero-img.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
+}
+
+.hero-text {
+    max-width: 400px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.hero-text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-color: white;
+}
+
+/* NAVBAR */
+.navbar > .container {
+    width: 100%;
+}
+
+.navbar-spacer {
+    display: none;
+}
+
+.navbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.navbar-item {
+    padding: 0 .25em 0 .25em;
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .3rem;
+    /* margin: 0 1.5em 0 1.5em; */
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: black;
+}
+
+.navbar, .navbar-spacer {
+    width: 100%;
+    height: 6rem;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-link:hover {
+    color: lemonchiffon;
+}
+
+/* core elements */
+li {
+    display: list-item;
+}
+
+form {
+    margin: 1rem 0 2.5rem 0;
+}
+
+input {
+    color: black;
+}
+
+legend {
+    display: block;
+    font-size: 26px;
+    font-weight: 600;
+    padding: .5em 2em 0 2em;
+    margin-bottom: .5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+/* BUTTON */
+.button.button-primary {
+    background-color: white;
+    color: black;
+    border-color: black;
+    outline: 0; 
+    opacity: .8;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+{
+    background-color: lemonchiffon;
+    color: black;
+    border-color: lemonchiffon;
+    opacity: .8;
+}
+
+.button.button-primary:focus,
+button.button-primary:focus,
+{
+  color: black;
+  background-color: lemonchiffon;
+  border-color: lemonchiffon; 
+}
+
+#top {
+    font-size: 15px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 600px;
+    right: 10px;
+    z-index: 9999;
+    display:none;
+    background-color: black;
+    color: white;
+    opacity: .8;
+}
+
+#top:hover{
+    text-decoration: none;
+    background-color: lemonchiffon;
+    color: black;
+    border-color: black;
+    opacity: .8;
+}
+
+.button {
+    font-size: 15px;
+}
+
+input[type="text"] {
+    opacity: .8;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border: 1px solid lemonchiffon;
+    outline: 0; 
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: opacity 0.25s 0.25s ease; 
+    opacity: 0;
+}
+
+/* CUSTOM classes and ID's */
+
+#map {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+#js-showErr {
+    font-family: 'Bitter', serif;
+    color: rgb(215, 53, 53);
+    font-weight: 600;
+}
+
+main {
+    margin: 5em 0 5em 0;
+}
+
+#resources {
+    padding: 5em 0 10em 0;
+    height: 100vh;
+}
+
+@media (max-width: 750px) and (min-width: 320px) {
+    .container {
+        width: 85%;
+        padding: 0; 
+      }
+
+    .hero-image {
+        background-image: url("../images/hero-img-800.jpg");
+    }
+
+    .navbar-item {
+        padding: 0;
+        margin: 0;
+        font-size: 90%;
+    }
+
+    .pageTitle span {
+        display: none;
+    }
+    
+    .pageTitle:after {
+        content: "vegHead";
+    }
+
+    form {
+        margin: 0 .5em 0 .5em;
+    }
+
+    legend {
+        font-size: 18px;
+    }
+
+    infowindow {
+        max-width: 100px;
+    }
+
+    iframe {
+        max-width: 50%;
+    }
+
+    .column {
+        padding: 0 0 1.2em 0;
+    }
+
+    #top {
+        bottom: 700px;
+    }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
+}
+
+.column, .columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; 
+}
+
+.one-half.column { 
+    width: 48%; 
+}
+
+button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; 
+}
+
+input {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: circle inside; 
+}
+
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0; 
+}
+
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin: .5rem 0 .5rem 1rem;
+}
+
+  li {
+    font-family: 'Bitter', serif;
+    font-size: 90%;
+    margin-bottom: 1rem; 
+}
