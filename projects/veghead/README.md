@@ -1,5 +1,5 @@
 # vegHead
-This app is live at https://daviddoes.github.io/veghead/
+This app is live at https://daviddoes.github.io/projects/veghead/index.html
 
 A responsive website for helping users find vegan restaurants near them, and get further resources about vegan eating and living.
 
