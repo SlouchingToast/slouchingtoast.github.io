@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <!-- Basic Page Needs -->
+    <meta name="google-site-verification"
+      content="xWUfkIc3em6SyD-JO5Quqp6ttLN1TCLHXK8cPERegzo" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>vegHead</title>
-    <meta name="description" content="Find vegan restaurants nearby, and find resources for learning more about a vegan diet and lifestyle.">
+    <meta name="description" content="Find vegan restaurants nearby, and find
+      resources for learning more about a vegan diet and lifestyle.">
     <meta name="author" content="David Clark, @DavidDoes___">
 
     <!-- Mobile Specific Metas -->
@@ -16,85 +19,98 @@
     <!-- LIBRARIES -->
 
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway:500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway:500,600"
+      rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous">
     </script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-</head>
+  </head>
 
-<body>
+  <body>
     <header role="banner" class="hero-image">
-        <div class="hero-text" role="group">
-            <form role="form" class="js-searchForm">
-                <legend>Discover vegan restaurants near you</legend>
-                <input aria-label="address, city, or postal input" type="text" id="js-userLocation" placeholder="Your location" autofocus required>
-                <input type="hidden" id="lat" name="lat"/>
-                <input type="hidden" id="lng" name="lng"/>
-                <input type="hidden" id="placeid" name="placeid"/>
-                <button class ="button button-primary" type="submit" aria-label="search">SUBMIT</button>
-                <p id="js-showErr" hidden></p>
-            </form>
-        </div>
+      <div class="hero-text" role="group">
+        <form role="form" class="js-searchForm">
+          <legend>Discover vegan restaurants near you</legend>
+          <input aria-label="address, city, or postal input" type="text"
+            id="js-userLocation" placeholder="Your location" autofocus required>
+          <input type="hidden" id="lat" name="lat" />
+          <input type="hidden" id="lng" name="lng" />
+          <input type="hidden" id="placeid" name="placeid" />
+          <button class="button button-primary" type="submit"
+            aria-label="search">SUBMIT</button>
+          <p id="js-showErr" hidden></p>
+        </form>
+      </div>
     </header>
-    
+
     <div class="container">
-        <div class="navbar-spacer"></div>
-        <nav role="navigation" class="navbar">
-            <div class="navbox container">
-                <ul class="navbar-list">
-                    <li class="navbar-item pageTitle"><span>vegHead | vegan restaurant finder</span></li>
-                    <li class="navbar-item"><a class="navbar-item navbar-link" href="#resources">Resources</a></li> 
-                </ul>  
-            </div>
-        </nav>
+      <div class="navbar-spacer"></div>
+      <nav role="navigation" class="navbar">
+        <div class="navbox container">
+          <ul class="navbar-list">
+            <li class="navbar-item pageTitle"><span>vegHead | vegan restaurant
+                finder</span></li>
+            <li class="navbar-item"><a class="navbar-item navbar-link"
+                href="#resources">Resources</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <main role="main" id="main" aria-live="assertive">
-        <div id="map" hidden>
+      <div id="map" hidden>
+      </div>
+      <div class="container" id="resources">
+        <h2>Resources</h2>
+        <p>If you're interested in learning more about eating and living vegan,
+          please see the resources listed below.</p>
+        <div class="row">
+          <div class="one-half column">
+            <h3>Video</h3>
+            <ul>
+              <li><a href="http://www.nationearth.com/" target="_blank">Earthlings</a></li>
+              <li><a href="https://www.youtube.com/watch?v=zgR_zz8Kmbs"
+                  target="_blank">James Aspey breaks year-long vow of silence
+                  for the animals</a></li>
+              <li><a href="https://www.earthlinged.com/30excuses/"
+                  target="_blank">30 Excuses</a></li>
+            </ul>
+          </div>
+          <div class="one-half column">
+            <h3>Other</h3>
+            <ul>
+              <li><a href="https://nutritionfacts.org/" target="_blank">NutritionFacts.org</a></li>
+              <li><a href="https://www.yourdailyvegan.com/environment/"
+                  target="_blank">Veganism and the Environment</a></li>
+              <li><a href="http://humanefacts.org/infographic/" target="_blank">Environmental
+                  Impact of Raising Animals for Food</a></li>
+              <li><a href="http://myfootprint.org/en/" target="_blank">In-Depth
+                  Footprint Calculator</a></li>
+              <li><a href="http://thevegancalculator.com/" target="_blank">The
+                  Vegan Calculator</a></li>
+            </ul>
+
+          </div>
         </div>
-        <div class="container" id="resources">
-            <h2>Resources</h2>
-            <p>If you're interested in learning more about eating and living vegan, please see the resources listed below.</p>
-            <div class="row">
-                <div class="one-half column">
-                    <h3>Video</h3>
-                    <ul>
-                        <li><a href="http://www.nationearth.com/" target="_blank">Earthlings</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=zgR_zz8Kmbs" target="_blank">James Aspey breaks year-long vow of silence for the animals</a></li>
-                        <li><a href="https://www.earthlinged.com/30excuses/" target="_blank">30 Excuses</a></li>
-                    </ul>
-                </div>
-                <div class="one-half column">
-                    <h3>Other</h3>
-                    <ul>
-                        <li><a href="https://nutritionfacts.org/" target="_blank">NutritionFacts.org</a></li>
-                        <li><a href="https://www.yourdailyvegan.com/environment/" target="_blank">Veganism and the Environment</a></li>
-                        <li><a href="http://humanefacts.org/infographic/" target="_blank">Environmental Impact of Raising Animals for Food</a></li>
-                        <li><a href="http://myfootprint.org/en/" target="_blank">In-Depth Footprint Calculator</a></li>
-                        <li><a href="http://thevegancalculator.com/" target="_blank">The Vegan Calculator</a></li>
-                    </ul>
-                    
-                </div>
-            </div>
-        </div>
-        <div>
-            <button id="top"><span>Top</span></button>
-        </div>
+      </div>
+      <div>
+        <button id="top"><span>Top</span></button>
+      </div>
     </main>
 
     <!-- Google Maps API with Key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT4F67piVv6cvASPssAR1s_buPw6kBQw0&libraries=places"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT4F67piVv6cvASPssAR1s_buPw6kBQw0&libraries=places"></script>
     <!-- custom script -->
     <script src="scripts/script.js"></script>
-</body>
+  </body>
 </html>
