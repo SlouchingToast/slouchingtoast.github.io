@@ -136,21 +136,18 @@ section.resume-section .resume-item .img-project {
   color: #1434f7 !important;
 }
 
-.img-profile {
-  /* filter: sepia(25%); */
+.img-project {
+  opacity: 0.6;
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all 1s ease-in-out;
 }
 
-.img-project {
-  transition: ease-out;
-  transition-property: opacity;
-  transition-duration: 1s;
-  opacity: 0.5;
-}
 .img-project:hover {
-  transition: ease-in;
-  transition-property: opacity;
-  transition-duration: 1s;
   opacity: 1;
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
 }
 
 section {
