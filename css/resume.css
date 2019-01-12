@@ -36,7 +36,7 @@ h4 {
 }
 
 i {
-  color: #1434f7;
+  color: black;
 }
 
 a {
@@ -133,7 +133,7 @@ section.resume-section .resume-item .img-project {
 }
 
 .bg-primary {
-  background-color: #1434f7 !important;
+  background-color: black !important;
 }
 
 .heading-color {
