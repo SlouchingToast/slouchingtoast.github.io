@@ -59,14 +59,6 @@ a {
   padding: 1em 0 1.5em 0;
 }
 
-/* .smaller {
-  padding-bottom: 3em;
-}
-
-#bio {
-  padding-top: 3em;
-} */
-
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
@@ -120,6 +112,11 @@ a {
   border: 1px solid lightgrey;
   margin: 30px auto;
   padding: 10px;
+}
+
+#bio {
+  max-width: 50%;
+  text-align: justify;
 }
 
 section.resume-section {
