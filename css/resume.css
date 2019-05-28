@@ -42,8 +42,12 @@ a {
 .list-social-icons a {
   color: #f8f8ff;
 }
-.list-social-icons a:hover {
-  color: rgba(248, 248, 255, 0.8);
+
+.fa-inverse {
+  color: #f8f8ff;
+}
+.fa-inverse:hover {
+  color: #1434f7;
 }
 .list-social-icons a .fa-lg {
   font-size: 1.75rem;
@@ -95,6 +99,14 @@ a {
   }
 }
 
+.project-wrapper {
+  max-width: 75%;
+  margin: 0 auto;
+  border: 1px solid lightgrey;
+  margin: 30px auto;
+  padding: 10px;
+}
+
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
@@ -140,21 +152,18 @@ section.resume-section .resume-item .img-project {
 
 .img-project {
   opacity: 0.6;
-  filter: gray; /* IE5+ */
+  filter: gray contrast(200%); /* IE5+ */
   -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-  -webkit-transition: all 1s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 
 .img-project:hover {
+  transition-duration: 0.5s;
   opacity: 1;
   filter: none;
   -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.01);
 }
 
 section {
   background-color: #efefef;
 }
-
-/* Note to self:  */
-/* run CSS thru Auto Prefixer, then minifier, then link HTML to .min.css */
