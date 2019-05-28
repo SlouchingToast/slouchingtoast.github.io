@@ -33,6 +33,10 @@ a {
   color: #1434f7;
 }
 
+a:hover {
+  color: black;
+}
+
 .subheading {
   font-weight: 500;
   font-size: 1.35rem;
