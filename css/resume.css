@@ -46,17 +46,32 @@ a {
 .fa-inverse {
   color: #f8f8ff;
 }
+
 .fa-inverse:hover {
   color: #1434f7;
 }
+
 .list-social-icons a .fa-lg {
   font-size: 1.75rem;
 }
+
+.list-inline {
+  padding: 1em 0 1.5em 0;
+}
+
+/* .smaller {
+  padding-bottom: 3em;
+}
+
+#bio {
+  padding-top: 3em;
+} */
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 @media (min-width: 992px) {
   #sideNav {
     font-family: 'Oxygen', sans-serif;
